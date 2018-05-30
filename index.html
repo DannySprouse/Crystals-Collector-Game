@@ -17,89 +17,93 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
 
-<body>
-    <div id="back">
-<!-- Add heading with background image and text overlay-->
-<div class="container-head">
-<div class="card bg-dark text-white">
-    <img class="card-img" src="assets/images/iStock-905500664 - purchased 5-28-2018.jpg" alt="Row of crystals with wavy light emanating over them">
-    <div class="card-img-overlay">
-      <h1 class="card-title">The Crystals Collector Game</h1>
+<body class="container-body" id="back">
+
+
+  <div class="container-head">
+    <div class="card bg-dark text-white">
+      <img class="card-img" src="assets/images/iStock-905500664 - purchased 5-28-2018.jpg" alt="Row of crystals with wavy light emanating over them">
+        <div class="card-img-overlay">
+          <h1 class="card-title">The Crystals Collector Game</h1>
+        </div>
     </div>
   </div>
-</div>
-<br />
+        <br />
 
-  <!-- Create a text box/card for the game instructions -->
-<div class="container-rules">
-  <div class="card border-info mb-3">
-    <div class="card-header">Rules of Engagement</div>
-    <div class="card-body text-info">
-      <h5 class="card-title">How to Play Crystals Collector</h5>
+  <div class="container-rules">
+    <div class="card border-info mb-3">
+      <div class="card-header">Rules of Engagement
+      </div>
+        <div class="card-body text-info">
+          <h5 class="card-title">How to Play Crystals Collector</h5>
 
-      <li class="card-text">You will be given a random number at the start of the game.  It will be displayed below under Your Target Total</li>
-      <li class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount to Your Current Total.</li>
-      <li class="card-text">You win the game by clicking on the crystals to get Your Current Total to exactly match Your Target Total.  You lose the game if Your Current Total goes above the Your Target Total number.</li>
-      <li class="card-text">The value of each crystal is hidden from you until you click on it.  Once clicked, that amount is added to your current total. Pay attention to the value of each crystal you click as you might need to click that amount again!</li>
-      <li class="card-text">You can click on the same crystal multiple times if you wish - just be careful to not go over the Your Target Total number!</li>
-      <li class="card-text">Each time when the game re-starts, the game will change the values of each crystal, will reset Your Current Total back to 0, and a new Your Target Total number will be set for you to meet.</li>
-
+            <li class="card-text">You will be given a random number at the start of the game.  It will be displayed below under Your Target Total.</li>
+            <li class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount to Your Current Total.</li>
+            <li class="card-text">You win the game by clicking on the crystals to get Your Current Total to exactly match Your Target Total.  You lose the game if Your Current Total goes above the Your Target Total number.</li>
+            <li class="card-text">The value of each crystal is hidden from you until you click on it.  Once clicked, that amount is added to your current total. Pay attention to the value of each crystal you click as you might need to click that amount again!</li>
+            <li class="card-text">You can click on the same crystal multiple times if you wish - just be careful to not go over the Your Target Total number!</li>
+            <li class="card-text">Each time when the game re-starts, the game will change the values of each crystal, will reset Your Current Total back to 0, and a new Your Target Total number will be set for you to meet.</li>
+        </div>
     </div>
   </div>
-  </div>
 
-  <!-- Create a set of three cards with the left being Your Target Total, middle being Wins & Losses, and right being Your Current Total -->
-<div class="container-middle">
-  <div class="card-deck">
-        <div class="card">
-          <img class="card-img-top mx-auto d-block" id="adjust" src="assets/images/cluster-of-crystals.jpg" alt="Cluster of blue crystal stones">
+  <div class="container-middle">
+    <div class="card-deck">
+    
+      <div class="card">
+        <img class="card-img-top mx-auto d-block adjust" src="assets/images/cluster-of-crystals.jpg" alt="Cluster of blue crystal stones">
           <div class="card-body">
             <h5 class="card-title">Your Target Total</h5>
-            <p class="card-text" id="align">NUMBER GOES HERE</p>
+              <p class="card-text-p"><span id="yourTargetTotal"></span></p>
           </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top mx-auto d-block" id="adjust" src="assets/images/gemstones.jpg" alt="Grouping of gemstonesp">
-          <div class="card-body">
-                <h5 class="card-title">Your Current Total</h5>
-                <p class="card-text" id="align">NUMBER GOES HERE</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card-img-top mx-auto d-block" id="adjust" src="assets/images/mineralogist.jpg" alt="Clipart mineralogist mining for crystals">
-          <div class="card-body">            
-              <h5 class="card-title">Your Wins and Losses</h5>
-            <p class="card-text">WINS: <br /><br />LOSSES: </p>
-
-          </div>
-        </div>
       </div>
-</div><br /><br />
-  <!--  Add row of 4 gems that will get assigned random numbers that are hidden until clicked -->
+    
+      <div class="card">
+        <img class="card-img-top mx-auto d-block adjust" src="assets/images/gemstones.jpg" alt="Grouping of gemstones">
+          <div class="card-body">
+            <h5 class="card-title">Your Current Total</h5>
+              <p class="card-text-p"><span id="yourCurrentTotal"></span></p>
+          </div>
+      </div>
+
+      <div class="card">
+        <img class="card-img-top mx-auto d-block adjust" src="assets/images/mineralogist.jpg" alt="Clipart mineralogist mining for crystals">
+          <div class="card-body">            
+            <h5 class="card-title">Your Wins and Losses</h5>
+
+            <div class="container">
+              <div class="row row-centered">
+                <div class="col-md-6 col-centered card-text-wl"><strong>WINS</strong><br /><span id="wins"></span></div>
+                <div class="col-md-6 col-centered card-text-wl"><strong>LOSSES</strong><br /><span id="losses"></span></div>
+               </div>
+           </div>
+          </div>
+      </div>
+    </div>
+  </div>
+          <br /><br />
 
   <div class="container-gems">
-        <div class="row">
-          <div class="col-md-3">
-            <img class="gems" src="assets/images/bluecrystal.jpg" />
-          </div>
-          <div class="col-md-3">
-                <img class="gems" src="assets/images/greencrystal.jpg" />
-          </div>
-          <div class="col-md-3">
-                <img class="gems" src="assets/images/yellowcrystal.jpg" />
-          </div>
-          <div class="col-md-3">
-                <img class="gems" src="assets/images/redcrystal.jpg" />
-           </div>
-        </div>
-      </div>
-      <br /><br /><br />
+    <div class="row">
 
-<!-- Add footer with copyright info -->
-<div class="footer">
-        <p>Copyright &#169; 2018</p>
+      <div class="col-md-12 col-centered text-center" id="images">
+        <img src="assets/images/bluecrystal.jpg" class="gems" id="blueCrystal" alt="image of a blue crystal" />
+        <img src="assets/images/greencrystal.jpg" class="gems" id="greenCrystal" alt="image of a green crystal" />
+        <img src="assets/images/yellowcrystal.jpg" class="gems" id="yellowCrystal" alt="image of a yellow crystal" />
+        <img src="assets/images/redcrystal.jpg" class="gems" id="redCrystal" alt="image of a red crystal" />
       </div>
-<script src="assets/javascript/game.js" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>></script>
-</div>
+
+    </div>      
+  </div> <br />
+
+  <div class="footer">
+    <p>Copyright &#169; 2018</p>
+  </div>
+
+</div> <!-- closes div#id=back -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
