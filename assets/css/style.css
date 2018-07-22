@@ -1,9 +1,13 @@
     /* CONTAINERS */
 
-.container-body {
+body {
     background-image: url("../images/background.jpg");
     background-repeat:  repeat;
     width: 100%;
+}
+
+.container-fluid {
+    padding: 0 100px 0 100px;
 }
 
 .container-head {
@@ -11,15 +15,10 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 15px;
+    text-align: center;
 }
 
-.container-rules {
-    max-width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.container-middle {
+.container-rules, .container-middle {
     max-width: 100%;
     padding-left: 50px;
     padding-right: 50px;
@@ -37,7 +36,7 @@ h1 {
     color: #000;
     font-weight: 800;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 h5 {
@@ -63,7 +62,7 @@ h5 {
 }
 
 .card-img {
-    width: 100%;
+    max-width: 100%;
     height: 200px;
     text-align: center;
 }
@@ -75,6 +74,8 @@ h5 {
 
 .adjust {
     padding-top: 10px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
 }
 
     /* GEM STONES FORMATTING */
@@ -97,36 +98,26 @@ h5 {
 
     /* Formatting for Scoring */
 
-#yourTargetTotal {
+#yourTargetTotal, #yourCurrentTotal {
     font-size: 50px;
     font-weight: 700;
 }
 
-#yourCurrentTotal {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-#wins {
-    font-size: 30px;
-    font-weight: 600;
-}
-
-#losses {
+#wins, #losses {
     font-size: 30px;
     font-weight: 600;
 }
 
     /* FOOTER */
 
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 25px;
-        background-color: #5DA6A9;
-        color: white;
-        text-align: center;
-    }
-    
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color: #5DA6A9;
+    color: white;
+    text-align: center;
+}
+  

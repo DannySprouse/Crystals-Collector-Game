@@ -1,4 +1,4 @@
-// Loading the document ready block first - although probaby not needed
+// Loading the document ready block first - although technically not needed for this project
 
 $( document ).ready(function() {
     console.log( "ready!" );
@@ -63,25 +63,25 @@ console.log(yourTargetTotal);
 // Write the functions to click the crystals and add that value to yourCurrentTotal, then compare that new total with the yourTargetTotal
 
     $("#blueCrystal").click(function(){
-        yourCurrentTotal = yourCurrentTotal + blueCrystal;
+        yourCurrentTotal += blueCrystal;
         $("#yourCurrentTotal").text(" " + yourCurrentTotal);
         compare();
     });
 
     $("#greenCrystal").click(function(){
-        yourCurrentTotal = yourCurrentTotal + greenCrystal;
+        yourCurrentTotal += greenCrystal;
         $("#yourCurrentTotal").text(" " + yourCurrentTotal);
         compare();
     });
 
     $("#yellowCrystal").click(function(){
-        yourCurrentTotal = yourCurrentTotal + yellowCrystal;
+        yourCurrentTotal += yellowCrystal;
         $("#yourCurrentTotal").text(" "  + yourCurrentTotal);
         compare();
     });
 
     $("#redCrystal").click(function(){
-        yourCurrentTotal = yourCurrentTotal + redCrystal;
+        yourCurrentTotal += redCrystal;
         $("#yourCurrentTotal").text(" " + yourCurrentTotal);
         compare();
     });
@@ -92,14 +92,14 @@ var compare = function(){
    
     if(yourCurrentTotal > yourTargetTotal){
         alert("You went over the target.  You lost this round.");
-        losses = losses +1;
+        losses++;
         $("#losses").text(losses);
         startGame(); // This has to be here to restart the next round
     }
 
     if (yourCurrentTotal === yourTargetTotal){
-        alert("YOU WON!");
-        wins = wins +1;
+        alert("CONGRATULATIONS! YOU WON!!");
+        wins++;
         $("#wins").text(wins);
         startGame(); // This has to be here to restart the next round
     }
