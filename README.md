@@ -5,6 +5,8 @@ Tools:  HTML5, CSS3, Bootstrap4, JavaScript, jQuery
 
 Purpose:  PC gaming; web application guessing game
 
+Responsiveness:  Game has some (limited) responsiveness as it is designed to be played on a desktop or laptop computer; but can also be viewed/played equally well using a horizontal orientation on most iPad and tablet systems
+
 Summary:  The computer generates a random number, which is visible to the player. There are four crystal images that also each get assigned a random (but hidden) number.  The user objective is to click on the four crystal images to reveal their value and attempt to generate a value equal to the computer generated number. If there is an exact match between the random number and the series of crystal clicks, the player wins and a WIN score is added; if the player exceeds the target number, the player loses and a LOSSES score is added. After a win or loss, the game resets, and a new random number target is set for the player, and all four crystal images also receive additional randomly assigned numbers.
 
 Problem:  The task was to create an app to run in browser that features dynamically updating HTML code, JavaScript, jQuery and computer random generation within a specific set range, and storing and adding those numbers and comparing to a random set number.  I needed code for the computer to generate a random number as the baseline (ranging between 19 and 120), then assign a random number to each of the four crystals (ranging between 1 to 12).  Then once the baseline number was matched or exceeded, a win or loss gets recorded to the player total score.
