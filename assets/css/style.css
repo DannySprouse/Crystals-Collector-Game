@@ -1,8 +1,20 @@
     /* CONTAINERS */
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
 
 body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 8rem;
+    min-height: 100%;
     background-image: url("../images/background.jpg");
-    width: 100%;
+    color: #000;
 }
 
 .container-head {
@@ -106,17 +118,23 @@ h5 {
     /* FOOTER */
 
 footer {
-    position: fixed;
-    padding-top: 5px;
+    position: absolute;
     border-top: 4px solid #d9ad97;
-    left: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     background-color: #5DA6A9;
     color: white;
     font-size: 18px;
     text-align: center;
-}
+    padding-bottom: 1rem;
+    padding-top: 5px;
+  }
+
+.footBreak {
+    display: none;
+  }
 
 /* social icons */
 
@@ -135,4 +153,17 @@ footer {
 
 .fa-linkedin, .fa-github, .fa-twitter, .fa-facebook, .fa-pinterest, .fa-500px {
     color: white;
+}
+
+/* On screens that are 600px or less, activate line break, remove separator bar */
+@media screen and (max-width: 600px) {
+    .footBreak {
+        display: block;
+    }
+    .footBar {
+        display: none;
+    }
+    .gems {
+        width: 30px;
+    }
 }
