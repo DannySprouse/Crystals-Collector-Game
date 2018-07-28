@@ -1,11 +1,11 @@
 # unit-4-game
 CRYSTALS COLLECTOR GAME
 
-Tools:  HTML5, CSS3, Bootstrap4, JavaScript, jQuery
+Tools:  HTML5, CSS3, Bootstrap4, JavaScript, jQuery, Media Queries
 
 Purpose:  PC gaming; web application guessing game
 
-Responsiveness:  Game has some (limited) responsiveness as it is designed to be played on a desktop or laptop computer; but can also be viewed/played equally well using a horizontal orientation on most iPad and tablet systems
+Responsiveness:  Game is completely responsive and can be played on a desktop, laptop, tablet/pad or smartphone (down to iPhone 6).
 
 Summary:  The computer generates a random number, which is visible to the player. There are four crystal images that also each get assigned a random (but hidden) number.  The user objective is to click on the four crystal images to reveal their value and attempt to generate a value equal to the computer generated number. If there is an exact match between the random number and the series of crystal clicks, the player wins and a WIN score is added; if the player exceeds the target number, the player loses and a LOSSES score is added. After a win or loss, the game resets, and a new random number target is set for the player, and all four crystal images also receive additional randomly assigned numbers.
 
@@ -13,7 +13,9 @@ Problem:  The task was to create an app to run in browser that features dynamica
 
 Solution:  Using JavaScript supplemented with the jQuery Library, have computer randomly generate a number between 19 and 120, then assign each crystal a number between 1 and 12.  As user clicks the crystals, add that score to the users total until it matches or exceeds the target score.  The player will be alerted for a win or loss.
 
-My Technical Approach:  I first built out a basic HTML mockup with some simple CSS styling.  I then coded out the JavaScript and jQuery in the game.js file.  I included instructions on the page how to play.  After setting the jQuery document.ready, I set the variables for the game including wins, losses, four crystal colors, and the two totals.  I used the Math.floor(Math.random) to set values for each of the crystals as well as for the random target number to be generated.  I set the game to start with a score of 0 under both the Wins and Losses, and as a win or loss occurred that number increased by one.  I created functions so that when the user clicked on a crystal, that number was added to the running total for that round, and then compared to the randomly generated target number.  If the crystals total was lower than the target, the player had to select another crystal, if the total matched the target the player scored a win, and if the total exceeded the target the player scored a loss.  Alerts were created to let the player know they had exceeded the target or had matched the target. I then made a few additional CSS adjustments, ensured the game was mobile responsive, and deployed.
+My Technical Approach:  I first built out a basic HTML mockup with some simple CSS styling.  I then coded out the JavaScript and jQuery in the game.js file.  I included instructions on the page how to play.  After setting the jQuery document.ready, I set the variables for the game including wins, losses, four crystal colors, and the two totals.  I used the Math.floor(Math.random) to set values for each of the crystals as well as for the random target number to be generated.  I set the game to start with a score of 0 under both the Wins and Losses, and as a win or loss occurred that number increased by one.  I created functions so that when the user clicked on a crystal, that number was added to the running total for that round, and then compared to the randomly generated target number.  If the crystals total was lower than the target, the player had to select another crystal, if the total matched the target the player scored a win, and if the total exceeded the target the player scored a loss.  Alerts were created to let the player know they had exceeded the target or had matched the target. I then made a few additional CSS adjustments, ensured the game was mobile responsive, and deployed.  
+
+Testing:  The game functions as expected when played in Chrome (68), Firefox ESR (60), IE (11) and Opera (54) browsers; on desktop (Win7) and laptop (Win7); and on iPad Air 2 and iPhone 8S devices (using Safari, Chrome and Firefox browsers). 
 
 Licenses, Credits & Attributions:  Purchased crystals banner graphic license from iStockPhoto May 2018.  Clipart images provided free courtesy of www.openclipart.org, www.classroomclipart.com and www.clipart-library.com. 
 

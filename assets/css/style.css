@@ -155,7 +155,7 @@ footer {
     color: white;
 }
 
-/* On screens that are 600px or less, activate line break, remove separator bar */
+/* On screens that are 600px or less */
 @media screen and (max-width: 600px) {
     .footBreak {
         display: block;
@@ -164,6 +164,47 @@ footer {
         display: none;
     }
     .gems {
-        width: 30px;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+        border-radius: 20px;
+    }
+    .container-head {
+        max-width: 350px;;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 5px;
+    }
+    .container-rules {
+        max-width: 350px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .card-img {
+        max-width: 100%;
+        height: 150px;
+    }
+    .card-img-top {
+        height: 50px;
+        width: 52px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 20px;
+        padding-top: 0px;
+    }
+    h5 {
+        font-size: 15px;
+    }
+    #yourTargetTotal, #yourCurrentTotal, #wins, #losses {
+        font-size: 18px;
+    }
+    .card-text-wl {
+        font-size: 10px;
     }
 }
