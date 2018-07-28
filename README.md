@@ -5,7 +5,7 @@ Tools:  HTML5, CSS3, Bootstrap4, JavaScript, jQuery, Media Queries
 
 Purpose:  PC gaming; web application guessing game
 
-Responsiveness:  Game is completely responsive and can be played on a desktop, laptop, tablet/pad or smartphone (down to iPhone 6).
+Responsiveness:  Game is completely responsive and can be played on a desktop, laptop, tablet/pad or smartphone
 
 Summary:  The computer generates a random number, which is visible to the player. There are four crystal images that also each get assigned a random (but hidden) number.  The user objective is to click on the four crystal images to reveal their value and attempt to generate a value equal to the computer generated number. If there is an exact match between the random number and the series of crystal clicks, the player wins and a WIN score is added; if the player exceeds the target number, the player loses and a LOSSES score is added. After a win or loss, the game resets, and a new random number target is set for the player, and all four crystal images also receive additional randomly assigned numbers.
 
